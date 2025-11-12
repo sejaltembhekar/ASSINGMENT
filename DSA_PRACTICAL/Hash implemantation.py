@@ -1,6 +1,6 @@
 # Hash Table implementation with Chaining
 class HashTable:
-    def _init_(self, size=10):
+    def __init__(self, size=10):  # ✅ Corrected constructor
         self.size = size
         self.table = [[] for _ in range(size)]  # each index has a list (for chaining)
 
